@@ -1,5 +1,5 @@
-import Bag from "../../classes/Bag";
-import { describe, it } from '@jest/globals'
+const Bag = require('../../classes/Bag')
+const { describe, it } = require('@jest/globals')
 
 describe('bag class',()=>{
     const bag = new Bag(10,1)
