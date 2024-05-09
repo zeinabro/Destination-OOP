@@ -7,6 +7,7 @@ class Person {
     }
 
     addBag(bag){
+        bag.assignOwner(this)
         this.#bags.push(bag)
     }
 
