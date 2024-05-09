@@ -1,4 +1,4 @@
-const Airport = require("../classes/Airport.js")
+const Airport = require("../../classes/Airport")
 const { describe, it } = require("@jest/globals")
 
 describe('airport class',()=>{
@@ -7,7 +7,6 @@ describe('airport class',()=>{
     it('correctly assigns variables',()=>{
         expect(airport.name).toBe("Heathrow Airport")
         expect(airport.getPlanes()).toEqual([])
-        expect().toBe("1")
     })
 
     it('has correct airport code value',()=>{
@@ -20,6 +19,4 @@ describe('airport class',()=>{
         airport.addPlane('plane2')
         expect(airport.getPlanes()).toEqual(['plane1','plane2'])
     })
-
-    it('')
 })
